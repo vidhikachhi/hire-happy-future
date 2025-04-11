@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,26 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom color palette
+				hr: {
+					purple: {
+						DEFAULT: '#9b87f5',
+						secondary: '#7E69AB',
+						dark: '#1A1F2C',
+						light: '#D6BCFA',
+					},
+					gray: {
+						DEFAULT: '#8E9196',
+						medium: '#8A898C',
+						light: '#F1F0FB',
+						dark: '#333333',
+					},
+					accent: {
+						blue: '#1EAEDB',
+						ocean: '#0EA5E9',
+						red: '#ea384c',
+					}
 				}
 			},
 			borderRadius: {
@@ -89,6 +110,9 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
 			}
 		}
 	},
